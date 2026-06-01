@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <!-- telefonda da görünsün diye bunu ekledim -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlimaParça - Ana Sayfa</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!-- Burası üst menüdür, tüm sayfalarda aynı olacak -->
+<div class="ust-menu">
+    <div class="site-adi">
+        <h1>KlimaParça</h1>
+        <p>Klima Malzemeleri ve Yedek Parça</p>
+    </div>
+    <nav>
+        <ul class="menu-linkleri">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="pages/urunler.html">Ürünler</a></li>
+            <li><a href="pages/sepet.html">Sepet</a></li>
+            <li><a href="pages/iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</div>
+<!-- üst menü bitti -->
+
+<!-- Burası üstteki büyük karşılama yazısıdır -->
+<div class="karsilama-alani">
+    <h2>Klima Yedek Parçaları Uygun Fiyata!</h2>
+    <p>Gaz, kumanda, filtre, kart ve daha fazlası.</p>
+    <a href="pages/urunler.html" class="buton-git">Ürünlere Git</a>
+</div>
+
+<!-- Burası öne çıkan ürünleri gösterdiğim yerdir -->
+<div class="ana-icerik">
+    <h2>Öne Çıkan Ürünler</h2>
+
+    <!-- Ürün 1: R22 Gazı -->
+    <div class="urun-kutu">
+        <!-- img/r22-gaz.jpg = R22 yazılı açık yeşil tüp fotoğrafı -->
+        <img src="img/r22-gaz.jpg" alt="R22 Klima Gazı" class="urun-fotografi">
+        <p class="urun-adi-metni">R22 Klima Gazı (13.6 kg)</p>
+        <p class="fiyat-bilgisi">850 TL</p>
+        <a href="pages/urun-detay.html?id=1" class="buton-incele">İncele</a>
+    </div>
+
+    <!-- Ürün 2: Evrensel Kumanda -->
+    <div class="urun-kutu">
+        <!-- img/evrensel-kumanda.webp = KT-9018E yazılı beyaz kumanda fotoğrafı -->
+        <img src="img/evrensel-kumanda.webp" alt="Evrensel Klima Kumandası" class="urun-fotografi">
+        <p class="urun-adi-metni">Evrensel Klima Kumandası</p>
+        <p class="fiyat-bilgisi">180 TL</p>
+        <a href="pages/urun-detay.html?id=3" class="buton-incele">İncele</a>
+    </div>
+
+    <!-- Ürün 3: İzolasyon Bandı -->
+    <div class="urun-kutu">
+        <!-- img/izolasyon-bant.webp = üç rulo beyaz izolasyon bandı fotoğrafı -->
+        <img src="img/izolasyon-bant.webp" alt="İzolasyon Bandı" class="urun-fotografi">
+        <p class="urun-adi-metni">İzolasyon Bandı (3'lü Paket)</p>
+        <p class="fiyat-bilgisi">120 TL</p>
+        <a href="pages/urun-detay.html?id=4" class="buton-incele">İncele</a>
+    </div>
+
+</div>
+<!-- öne çıkan ürünler bitti -->
+
+<!-- Basit JavaScript quiz uygulaması -->
+<div class="quiz-alani">
+    <h2>Klima Bilgi Quiz'i</h2>
+    <p>3 soruluk hızlı quiz ile klima parçaları hakkında bilginizi test edin.</p>
+    <div class="quiz-kutu">
+        <div id="quiz-soru-metin" class="quiz-soru">Quiz'e başlamak için aşağıdaki butona basın.</div>
+        <div id="quiz-secenekler" class="quiz-secenekler"></div>
+        <div id="quiz-sonuc" class="quiz-sonuc"></div>
+        <button id="quiz-ileri-buton" class="buton-quiz">Başlat</button>
+        <button id="quiz-tekrar-buton" class="buton-quiz gizli">Tekrar Oyna</button>
+    </div>
+</div>
+
+<!-- Burası alt bilgi kısmıdır, tüm sayfalarda aynı olacak -->
+<div class="alt-bilgi">
+    <p>KlimaParça &copy; 2026 | Tüm Hakları Saklıdır</p>
+    <p>Tel: 0312 000 00 00 | Mail: info@klimaparca.com</p>
+</div>
+
+<script src="scripts/myscript.js"></script>
+</body>
+</html>

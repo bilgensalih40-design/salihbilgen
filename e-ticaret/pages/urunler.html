@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlimaParça - Ürünler</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<!-- Burası üst menüdür -->
+<div class="ust-menu">
+    <div class="site-adi">
+        <h1>KlimaParça</h1>
+        <p>Klima Malzemeleri ve Yedek Parça</p>
+    </div>
+    <nav>
+        <ul class="menu-linkleri">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="sepet.html">Sepet</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Burası sayfa başlığıdır -->
+<div class="sayfa-baslik">
+    <h2>Tüm Ürünler</h2>
+</div>
+
+<!-- Burası bütün ürünleri listelediğim alandır -->
+<div class="urunler-listesi-alani">
+
+    <!-- Ürün 1: R22 Gazı -->
+    <div class="urun-kutu">
+        <!-- img/r22-gaz.jpg = üzerinde R22 yazan açık yeşil büyük tüp -->
+        <img src="../img/r22-gaz.jpg" alt="R22 Klima Gazı" class="urun-fotografi">
+        <p class="urun-adi-metni">R22 Klima Gazı</p>
+        <p class="urun-kisa-aciklama">13.6 kg tüp. Eski tip klimalar için.</p>
+        <p class="fiyat-bilgisi">850 TL</p>
+        <a href="urun-detay.html?id=1" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(1); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 2: R410A Gazı -->
+    <div class="urun-kutu">
+        <!-- img/r410a-gaz.webp = üzerinde R410A yazan koyu yeşil tüp, ICE+ markası var -->
+        <img src="../img/r410a-gaz.webp" alt="R410A Klima Gazı" class="urun-fotografi">
+        <p class="urun-adi-metni">R410A Klima Gazı</p>
+        <p class="urun-kisa-aciklama">10 kg tüp. Yeni nesil split klimalar için.</p>
+        <p class="fiyat-bilgisi">620 TL</p>
+        <a href="urun-detay.html?id=2" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(2); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 3: Evrensel Kumanda -->
+    <div class="urun-kutu">
+        <!-- img/evrensel-kumanda.webp = KT-9018E yazan beyaz universal klima kumandası -->
+        <img src="../img/evrensel-kumanda.webp" alt="Evrensel Klima Kumandası" class="urun-fotografi">
+        <p class="urun-adi-metni">Evrensel Klima Kumandası (KT-9018E)</p>
+        <p class="urun-kisa-aciklama">2000+ marka ile uyumlu. Pil dahil değildir.</p>
+        <p class="fiyat-bilgisi">180 TL</p>
+        <a href="urun-detay.html?id=3" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(3); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 4: İzolasyon Bandı -->
+    <div class="urun-kutu">
+        <!-- img/izolasyon-bant.webp = 3 adet beyaz rulo izolasyon bandı -->
+        <img src="../img/izolasyon-bant.webp" alt="İzolasyon Bandı" class="urun-fotografi">
+        <p class="urun-adi-metni">İzolasyon Bandı (3'lü Paket)</p>
+        <p class="urun-kisa-aciklama">Klima boruları için. UV dayanıklı beyaz bant.</p>
+        <p class="fiyat-bilgisi">120 TL</p>
+        <a href="urun-detay.html?id=4" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(4); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 5: İç Ünite Fan Motoru -->
+    <div class="urun-kutu">
+        <!-- img/ic-unite-fan-motoru.jpg = yuvarlak beyaz fan motoru, milli ve kablo çıkıyor -->
+        <img src="../img/ic-unite-fan-motoru.jpg" alt="İç Ünite Fan Motoru" class="urun-fotografi">
+        <p class="urun-adi-metni">İç Ünite Fan Motoru (DC)</p>
+        <p class="urun-kisa-aciklama">Arçelik uyumlu. Kablo bağlantılı, 25W.</p>
+        <p class="fiyat-bilgisi">320 TL</p>
+        <a href="urun-detay.html?id=5" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(5); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 6: PCB Kontrol Kartı -->
+    <div class="urun-kutu">
+        <!-- img/pcb-kontrol-karti.jpg = yeşil elektronik devre kartı, Hisense uyumlu -->
+        <img src="../img/pcb-kontrol-karti.jpg" alt="Klima PCB Kontrol Kartı" class="urun-fotografi">
+        <p class="urun-adi-metni">Klima PCB Kontrol Kartı</p>
+        <p class="urun-kisa-aciklama">Hisense uyumlu ana kontrol kartı.</p>
+        <p class="fiyat-bilgisi">650 TL</p>
+        <a href="urun-detay.html?id=6" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(6); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 7: Klima Filtresi -->
+    <div class="urun-kutu">
+        <!-- img/klima-filtresi.jpg = elde tutulan mavi çerçeveli klima filtresi -->
+        <img src="../img/klima-filtresi.jpg" alt="Klima Filtresi" class="urun-fotografi">
+        <p class="urun-adi-metni">Klima Filtresi (2'li Paket)</p>
+        <p class="urun-kisa-aciklama">Yıkanabilir, standart ölçülerde. Çoğu klimayla uyumlu.</p>
+        <p class="fiyat-bilgisi">95 TL</p>
+        <a href="urun-detay.html?id=7" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(7); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+    <!-- Ürün 8: NTC Isı Sensörü -->
+    <div class="urun-kutu">
+        <!-- img/ntc-isinma-sensoru.jpeg = bakır başlıklı, siyah kablolu ısı sensörü -->
+        <img src="../img/ntc-isinma-sensoru.jpeg" alt="NTC Isı Sensörü" class="urun-fotografi">
+        <p class="urun-adi-metni">NTC Isı Sensörü</p>
+        <p class="urun-kisa-aciklama">10kΩ. Sıcaklık ölçüm sensörü. Evrensel uyum.</p>
+        <p class="fiyat-bilgisi">55 TL</p>
+        <a href="urun-detay.html?id=8" class="buton-incele">Detay</a>
+        <button type="button" class="buton-sepet" onclick="sepeteEkle(8); window.location.href='sepet.html';">Sepete Ekle</button>
+    </div>
+
+</div>
+<!-- ürünler listesi bitti -->
+
+<!-- Burası alt bilgi kısmıdır -->
+<div class="alt-bilgi">
+    <p>KlimaParça &copy; 2025 | Tüm Hakları Saklıdır</p>
+    <p>Tel: 0312 000 00 00 | Mail: info@klimaparca.com</p>
+</div>
+
+<script src="../scripts/myscript.js"></script>
+</body>
+</html>

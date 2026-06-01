@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlimaParça - Ürün Detayı</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<!-- Burası üst menüdür -->
+<div class="ust-menu">
+    <div class="site-adi">
+        <h1>KlimaParça</h1>
+        <p>Klima Malzemeleri ve Yedek Parça</p>
+    </div>
+    <nav>
+        <ul class="menu-linkleri">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="sepet.html">Sepet</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Nerede olduğumuzu gösteriyor -->
+<div class="sayfa-baslik">
+    <p><a href="urunler.html">Ürünler</a> &gt; Ürün Detayı</p>
+</div>
+
+<!-- Burası ürünün detaylı bilgi alanıdır -->
+<div class="detay-alani">
+
+    <!-- Ürün resmi -->
+    <div class="detay-resim-bolumu">
+        <img id="detay-urun-resmi" src="../img/r22-gaz.jpg" alt="Ürün resmi" class="detay-urun-resmi">
+    </div>
+
+    <!-- Ürün bilgileri -->
+    <div class="detay-bilgi-bolumu">
+        <h2 id="detay-urun-adi" class="detay-urun-adi">Ürün Adı Yükleniyor...</h2>
+        <p class="detay-stok">Stok Durumu: <strong id="detay-stok-durum">Yükleniyor</strong></p>
+
+        <!-- Fiyat -->
+        <p class="detay-fiyat">Fiyat: <strong id="detay-fiyat-etiket">0 TL</strong></p>
+
+        <!-- Açıklama -->
+        <p id="detay-aciklama" class="detay-aciklama">
+            Ürün açıklaması burada görünecek.
+        </p>
+
+        <!-- Teknik bilgiler basit liste halinde -->
+        <p><strong>Teknik Bilgiler:</strong></p>
+        <ul class="ozellik-listesi" id="detay-ozellik-listesi">
+            <li>Ürün özellikleri burada yer alır.</li>
+        </ul>
+
+        <!-- Sepete ekleme butonu -->
+        <button type="button" id="detay-sepete-ekle" class="buton-sepet">Sepete Ekle</button>
+        <br><br>
+        <p id="urun-bulunamadi" class="kargo-notu"></p>
+        <p class="kargo-notu">* Sepetinizle ilerleyin, ürünlerinizi buradan kontrol edebilirsiniz.</p>
+    </div>
+
+</div>
+<!-- detay alanı bitti -->
+
+<!-- Burası alt bilgi kısmıdır -->
+<div class="alt-bilgi">
+    <p>KlimaParça &copy; 2025 | Tüm Hakları Saklıdır</p>
+    <p>Tel: 0312 000 00 00 | Mail: info@klimaparca.com</p>
+</div>
+
+<script src="../scripts/myscript.js"></script>
+</body>
+</html>

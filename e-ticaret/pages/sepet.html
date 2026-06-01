@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlimaParça - Sepetim</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<!-- Burası üst menüdür -->
+<div class="ust-menu">
+    <div class="site-adi">
+        <h1>KlimaParça</h1>
+        <p>Klima Malzemeleri ve Yedek Parça</p>
+    </div>
+    <nav>
+        <ul class="menu-linkleri">
+            <li><a href="../index.html">Ana Sayfa</a></li>
+            <li><a href="urunler.html">Ürünler</a></li>
+            <li><a href="sepet.html">Sepet</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Sayfa başlığı -->
+<div class="sayfa-baslik">
+    <h2>Sepetim</h2>
+</div>
+
+<!-- Burası sepet içeriğinin gösterildiği alandır, görsel koymadım sadece metin -->
+<div class="sepet-listesi-kutu">
+
+    <p><strong>Sepetteki Ürünler:</strong></p>
+    <hr>
+
+    <!-- Sepet ürünleri JS ile buraya gelecek -->
+    <div id="sepet-urun-listesi"></div>
+
+    <!-- Burası toplamın gösterildiği yerdir -->
+    <div class="sepet-toplam-satiri">
+        <span>TOPLAM:</span>
+        <!-- Bu alana JS ile toplamı yazacağım -->
+        <span id="toplam-fiyat-alani"><strong>0 TL</strong></span>
+    </div>
+
+    <!-- Kargo mesajı - JS gösterecek, başlangıçta gizli -->
+    <p id="kargo-bedava-yazisi" class="kargo-bedava-mesaj"></p>
+
+    <br>
+    <!-- Hesapla butonu, JS fonksiyonunu çalıştırır -->
+    <button class="buton-hesapla" onclick="toplamHesapla()">Sepeti Hesapla</button>
+    <br><br>
+    <button class="buton-siparis" onclick="siparisTamamla()">Siparişi Tamamla</button>
+
+</div>
+<!-- sepet listesi bitti -->
+
+<!-- Burası alt bilgi kısmıdır -->
+<div class="alt-bilgi">
+    <p>KlimaParça &copy; 2025 | Tüm Hakları Saklıdır</p>
+    <p>Tel: 0312 000 00 00 | Mail: info@klimaparca.com</p>
+</div>
+
+<script src="../scripts/myscript.js"></script>
+</body>
+</html>
